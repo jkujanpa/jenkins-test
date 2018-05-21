@@ -1,12 +1,16 @@
 pipeline {
     agent any
     stages {
-        stage('Build') {
+        stage('Hello') {
             steps {
                 sh 'echo "Hello World"'
+            }
+        }
+        stage('List') {
+            steps {
                 sh '''
-                    echo "Multiline shell steps works too"
-                    ls -lah
+                    echo "List root folder"
+                    ls -lah /
                 '''
             }
         }
