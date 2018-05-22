@@ -1,7 +1,7 @@
 
 Vagrant.configure(2) do |config|
 	config.vm.box = "centos/7"
-	#config.vm.box_version = "1803.01"
+	config.vm.box_version = "1804.02"
 	config.vm.box_check_update = true
 	config.ssh.forward_agent = true
 

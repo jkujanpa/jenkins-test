@@ -3,6 +3,13 @@
 mkdir -p /var/jenkins_home
 chown -R 1000 /var/jenkins_home
 
+#mkdir -p /var/jenkins_home/.ssh
+#ssh-keygen -t rsa -b 4096 -N "" -f /var/jenkins_home/.ssh/jenkins_master
+#chown -R 1000 /var/jenkins_home
+
+
+
+
 cd /home/vagrant/jenkins
 
 docker build -t jenkins-test:1 .
