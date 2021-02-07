@@ -1,5 +1,10 @@
 pipeline {
-    agent any
+agent {
+    docker {
+        image 'centos:7'
+        label 'my-defined-label'
+        //args  '-v /tmp:/tmp'
+    }
     stages {
         stage('Hello') {
             steps {
